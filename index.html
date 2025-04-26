@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>wellcome</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fefbe9, #e8f5e9); /* light cream to mint green */
+    color: #2e2e2e;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    font-size: 15px;
+  }
+
+  header {
+   background: linear-gradient(90deg, #ff4d4d, #ff9999, #00ff00);
+
+    color: white;
+    padding: 25px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  h2 {
+    color: #558b2f;
+    margin-bottom: 12px;
+  }
+
+  section {
+    margin-bottom: 25px;
+  }
+
+  input, button {
+    width: 80%;
+    padding: 8px 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+
+  input:focus {
+    border-color: #81c784;
+    outline: none;
+    box-shadow: 0 0 4px rgba(129, 199, 132, 0.3);
+  }
+
+  button {
+    background: linear-gradient(90deg, #007BFF, #3399ff); /* blue button */
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: linear-gradient(90deg, #0056b3, #1e88e5);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .testimonial {
+    background: #f1f8e9;
+    border-left: 4px solid #aed581;
+    padding: 12px 18px;
+    margin: 15px 0;
+    border-radius: 8px;
+  }
+
+  footer {
+    text-align: left;
+    font-size: 14px;
+    padding-top: 20px;
+  }
+
+  footer a {
+    color: #007BFF; /* blue link */
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+
+
+
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>🎉 You’re Eligible for a  Scholarship Grant! 🎉</h1>
+    <p>Apply Now and Start Your Dream of Studying Abroad Today</p>
+  </header>
+
+  <section>
+    <h2>Safe & Secure Application Process</h2>
+    <p>No payment required. Fast & secure approval. Trusted by thousands worldwide.</p>
+  </section>
+<center>
+
+
+  <section >
+    <h2>🎊 Congratulations! 🎊</h2>
+    <p>Your application is now ready. Click below to continue.</p>
+    <a href="https://web.facebook.com/share/p/1M9Mt8Muta/" style="display:block;text-align:center;padding:14px;background:#007BFF;color:white;border-radius:5px;text-decoration:none;font-weight:bold;">Start Application</a>
+  </section>
+</center>
+  <section>
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>"I never thought I could study abroad without having to worry about tuition fees. Thanks to this scholarship grant, I am now studying in the UK for free."</p>
+      <strong>- Ajayi James</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Thanks to this incredible scholarship grant, I am now pursuing my dream education in Australia—completely free."</p>
+      <strong>- Chibuzor Okonkwo</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Thanks to this incredible scholarship program, I’m now living my dream—studying in Canada with no financial burden."</p>
+      <strong>- Sandra Okafor</strong>
+    </div>
+  </section>
+
+  <section>
+    <h2>How We Will Contact You</h2>
+    <p><strong>Simple Application:</strong> Fill out our 30-second form easily and securely.</p>
+    <p><strong>Instant Eligibility:</strong> Get instant eligibility check and quick approval in your email.</p>
+    <p><strong>Fast Fund Transfer:</strong> Receive funds in 24–48 hours after a brief interview.</p>
+  </section>
+
+  <section>
+    <h2>Don't Miss This One-time Opportunity!</h2>
+    <p>Join thousands of successful Nigerians who have transformed their lives with our grant program.</p>
+    <p><strong>Limited spots available. Application window closing soon.</strong></p>
+  </section>
+
+  <footer>
+    <p><a href="https://amixflowsmp.com/privacy-policy/">Privacy Policy</a></p>
+  </footer>
+</div>
+
+<script>
+  function showPhoneSection() {
+    const name = document.getElementById("name").value;
+    if (name.trim() === "") {
+      alert("Please enter your name");
+      return;
+    }
+    document.getElementById("nameSection").classList.add("hidden");
+    document.getElementById("phoneSection").classList.remove("hidden");
+  }
+
+  function submitApplication() {
+    const phone = document.getElementById("phone").value;
+    if (phone.trim() === "") {
+      alert("Please enter your phone number");
+      return;
+    }
+    document.getElementById("phoneSection").classList.add("hidden");
+    document.getElementById("congratsSection").classList.remove("hidden");
+  }
+</script>
+
+</body>
+</html>
+
